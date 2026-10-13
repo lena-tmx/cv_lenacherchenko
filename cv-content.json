@@ -1,0 +1,81 @@
+{
+  "name": "Lena Cherchenko",
+  "headline": "ISTQB CERTIFIED QA ENGINEER | MANUAL & AUTOMATION",
+  "location": "Zurich, Switzerland | Swiss C Permit",
+  "email": "lenazurich@gmail.com",
+  "phone": "+41 76 588 66 45",
+  "linkedin": "https://www.linkedin.com/in/lena-ch/",
+  "summary": "QA Engineer with 5+ years of commercial experience in manual and automated testing of web applications, APIs, backend services and integrations, including 4+ years of hands-on test automation. Experienced with Playwright, TypeScript, test framework design, microservices and CI/CD.",
+  "skills": [
+    ["Automation", "Playwright, TypeScript/JavaScript, UI & API automation"],
+    [
+      "API & Backend",
+      "REST API, API contracts, authentication, microservices, integrations, Postman, Swagger/OpenAPI"
+    ],
+    [
+      "Framework Design",
+      "Page Objects, custom fixtures, reusable utilities, test data setup and cleanup"
+    ],
+    ["CI/CD", "GitHub Actions, TeamCity, Git"],
+    [
+      "Manual Testing",
+      "Exploratory, regression, integration testing; requirements & risk analysis; test design"
+    ],
+    ["Observability & Reporting", "Kibana/Elasticsearch, Grafana/Loki, TestRail, Allure"],
+    ["Additional Stack", "Selenium, Java, TestNG, Axios"]
+  ],
+  "employer": "airSlate Inc.",
+  "employmentDates": "2020–2025",
+  "employerDescription": "Product B2B SaaS platform · USA / Ukraine · Remote",
+  "roles": [
+    {
+      "title": "Automation QA Engineer",
+      "dates": "2023–2025",
+      "note": "Promoted from Manual QA Engineer after a technical review",
+      "bullets": [
+        "Developed and maintained UI and API automated tests using Playwright and TypeScript, covering 50+ backend endpoints and creating 150+ end-to-end tests across API and UI layers.",
+        "Contributed to maintaining a shared automation suite of 500+ tests.",
+        "Built reusable automation infrastructure with helpers, fixtures and test data flows; configured GitHub Actions for scheduled and on-demand execution.",
+        "Defined automation coverage based on release risks, business priorities and regression value.",
+        "Validated backend microservices and integrations with Salesforce, NetSuite, Google and Microsoft, including API contracts, authentication and error handling."
+      ]
+    },
+    {
+      "title": "Manual QA Engineer",
+      "dates": "2020–2023",
+      "note": "",
+      "bullets": [
+        "Performed manual web, API and integration testing; analyzed requirements, service dependencies and integration risks in a microservices environment.",
+        "Implemented automated API coverage for a backend system with 30+ API routes; built reusable API clients for test data setup, validation and cleanup.",
+        "Investigated defects using Kibana and collaborated with backend teams to localize issues; used TeamCity for test environment setup.",
+        "Participated in release testing and prepared QA release notes; maintained test cases, plans and checklists in TestRail and Allure.",
+        "Tested Stripe-based payment flows, including subscriptions, billing cycles, refunds, failed transactions and error handling."
+      ]
+    }
+  ],
+  "earlierExperience": [
+    {
+      "title": "Freelance Software Tester",
+      "dates": "2020–2021",
+      "company": "test IO & uTest · Global, Remote",
+      "text": "Performed exploratory, regression and cross-platform testing of web and mobile applications; executed test scenarios and investigated issues using ADB, Postman, SOAP UI and debugging tools."
+    },
+    {
+      "title": "QA Intern",
+      "dates": "2020–2021",
+      "company": "QA Light · Ukraine",
+      "text": "Designed and documented test cases, tracked requirement coverage and reported defects in Jira."
+    }
+  ],
+  "additionalExperience": "Risk Manager, 2006–2010; System Administrator, 2002–2003 — banking and leasing companies, Ukraine.",
+  "portfolio": {
+    "title": "Playwright Automation Framework",
+    "url": "https://github.com/lena-tmx/qa-juice-shop",
+    "description": "Personal UI, API and security automation framework built for the OWASP Juice Shop public demo application.",
+    "stack": "Playwright · TypeScript · AJV · GitHub Actions · Allure · Qase"
+  },
+  "certification": "ISTQB Certified Tester Foundation Level (CTFL)",
+  "education": "Master’s degree in Business Informatics — National Economic University, Kyiv, 2002",
+  "training": "Selenium/TestNG (Java); performance testing (JMeter).",
+  "languages": "English — B2; German — B2; Russian — Native; Ukrainian — Native"
+}

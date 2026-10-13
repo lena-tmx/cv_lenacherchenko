@@ -19,9 +19,6 @@ app.get('/', (_req, res) => {
   res.sendFile(path.join(publicDir, 'index.html'));
 });
 
-// Helper
-const delay = (ms: number) => new Promise<void>((resolve) => setTimeout(resolve, ms));
-
 app.get('/generate-pdf', async (req: Request, res: Response) => {
   const targetUrl = String(req.query.url || '').trim();
 
@@ -90,21 +87,14 @@ app.get('/generate-pdf', async (req: Request, res: Response) => {
 
     // IMPORTANT: avoid networkidle0 for public pages (analytics/fonts can keep network busy)
     await page.goto(targetUrl, { waitUntil: 'domcontentloaded', timeout: 45000 });
-    await delay(500);
-
-    await page.emulateMediaType('screen');
-
-    // Hide the button in the generated PDF
-    await page.addStyleTag({
-      content: `.download-btn { display: none !important; }`,
-    });
+    // Match the browser's Save as PDF layout, including CSS page margins.
+    await page.emulateMediaType('print');
 
     // Wait for fonts
     await page.evaluate(async () => {
       if (document.fonts?.ready) await document.fonts.ready;
+      await Promise.all(Array.from(document.images, (image) => image.decode()));
     });
-
-    await delay(150);
 
     console.log('Final page URL:', page.url());
 
@@ -113,7 +103,7 @@ app.get('/generate-pdf', async (req: Request, res: Response) => {
       format: 'A4',
       printBackground: true,
       preferCSSPageSize: true,
-      margin: { top: '10mm', right: '12mm', bottom: '10mm', left: '12mm' },
+      tagged: true,
     });
 
     // Convert to Buffer for checks + reliable sending
@@ -142,7 +132,10 @@ app.get('/generate-pdf', async (req: Request, res: Response) => {
     // Send PDF reliably
     res.status(200);
     res.setHeader('Content-Type', 'application/pdf');
-    res.setHeader('Content-Disposition', 'attachment; filename="cv.pdf"');
+    const filename = new URL(page.url()).pathname.endsWith('/ats.html')
+      ? 'CV_LCherchenko_QA_ATS.pdf'
+      : 'CV_LCherchenko_QA_Designed.pdf';
+    res.setHeader('Content-Disposition', `attachment; filename="${filename}"`);
     res.setHeader('Content-Length', String(pdf.length));
     res.setHeader('Cache-Control', 'no-store');
     res.end(pdf);
