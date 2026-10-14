@@ -71,10 +71,9 @@
   ],
   "additionalExperience": "Risk Manager, 2006–2010; System Administrator, 2002–2003 — banking and leasing companies, Ukraine.",
   "portfolio": {
-    "title": "Playwright Automation Framework",
+    "title": "QA Automation — OWASP Juice Shop",
     "url": "https://github.com/lena-tmx/qa-juice-shop",
-    "description": "Personal UI, API and security automation framework built for the OWASP Juice Shop public demo application.",
-    "stack": "Playwright · TypeScript · AJV · GitHub Actions · Allure · Qase"
+    "description": "Playwright + TypeScript test automation project demonstrating UI, API and security testing, with Page Object Model, reusable fixtures, test data management and CI/CD integration."
   },
   "certification": "ISTQB Certified Tester Foundation Level (CTFL)",
   "education": "Master’s degree in Business Informatics — National Economic University, Kyiv, 2002",

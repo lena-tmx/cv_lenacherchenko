@@ -127,6 +127,10 @@ aside h3 {
   margin-top: 6px;
   font-weight: 600;
 }
+.portfolio-link {
+  margin-bottom: 6px;
+  font-weight: 600;
+}
 .employer {
   margin-bottom: 8px;
 }
@@ -244,7 +248,7 @@ li {
   margin-top: 8px;
 }
 .designed aside h2 {
-  margin-bottom: 5px;
+  margin-bottom: 4px;
   padding-bottom: 3px;
 }
 .designed aside .skill {
@@ -268,10 +272,13 @@ li {
   line-height: 1.2;
 }
 .designed aside .skill {
-  margin-bottom: 4px;
+  margin-bottom: 2px;
 }
 .designed aside .section {
-  margin-top: 6px;
+  margin-top: 4px;
+}
+.designed aside .portfolio-link {
+  margin-bottom: 3px;
 }
 @page {
   margin: 9mm 12mm;

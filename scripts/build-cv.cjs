@@ -29,7 +29,7 @@ const experience = section(
 const portfolio = (showUrl = false) =>
   section(
     'Technical Portfolio',
-    `<h3><a href="${escape(cv.portfolio.url)}">${escape(cv.portfolio.title)}</a></h3>${showUrl ? `<p class="portfolio-url"><a href="${escape(cv.portfolio.url)}">${escape(cv.portfolio.url)}</a></p>` : ''}${paragraph(cv.portfolio.description)}<p class="stack">${escape(cv.portfolio.stack)}</p>`,
+    `<p class="portfolio-link"><a href="${escape(cv.portfolio.url)}">GitHub</a>${showUrl ? ` · <a href="${escape(cv.portfolio.url)}">${escape(cv.portfolio.url)}</a>` : ''}</p><h3>${escape(cv.portfolio.title)}</h3>${paragraph(cv.portfolio.description)}`,
   );
 const certification = section('Certifications', paragraph(cv.certification));
 const education = section(
