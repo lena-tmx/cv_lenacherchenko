@@ -35,7 +35,7 @@
       "dates": "2023–2025",
       "note": "Promoted from Manual QA Engineer after a technical review",
       "bullets": [
-        "Developed and maintained UI and API tests with Playwright and TypeScript, covering 50+ backend endpoints and creating 150+ end-to-end tests.",
+        "Developed and maintained automated UI and API tests using Playwright and TypeScript, covering 50+ backend endpoints and creating 150+ end-to-end tests.",
         "Contributed to maintaining a shared automation suite of 500+ tests.",
         "Built reusable helpers, fixtures and test data flows; configured GitHub Actions for scheduled and on-demand test execution.",
         "Defined automation coverage based on release risks, business priorities and regression value.",
@@ -47,7 +47,7 @@
       "dates": "2020–2023",
       "note": "",
       "bullets": [
-        "Performed manual web, API and integration testing; analyzed requirements, service dependencies and integration risks in a microservices environment.",
+        "Took ownership of testing individual backend services, defining test scope and priorities based on requirements, dependencies and release risks, and coordinating testing through release validation.",
         "Implemented automated API coverage for a backend system with 30+ API routes; built reusable API clients for test data setup, validation and cleanup.",
         "Investigated defects using Kibana and collaborated with backend teams to localize issues; used TeamCity for test environment setup.",
         "Participated in release testing and prepared QA release notes; maintained test cases, plans and checklists in TestRail and Allure.",

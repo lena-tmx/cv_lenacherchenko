@@ -5,9 +5,8 @@ node_modules/
 dist/
 
 # generated CV exports (keep local copies out of Git)
-/cv.pdf
-/CV_LCherchenko_QA_*.pdf
-/LCherchenko_CV_*.pdf
+/*cv*.pdf
+/*CV*.pdf
 
 # logs
 npm-debug.log*

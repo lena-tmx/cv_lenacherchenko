@@ -265,7 +265,17 @@ li {
   padding-bottom: 10px;
 }
 .designed main {
-  line-height: 1.28;
+  line-height: 1.26;
+}
+.designed main li {
+  margin-bottom: 3px;
+}
+.designed main .section {
+  margin-top: 8px;
+}
+.designed main .earlier,
+.designed main .additional {
+  margin-top: 8px;
 }
 .designed aside {
   font-size: 9pt;
