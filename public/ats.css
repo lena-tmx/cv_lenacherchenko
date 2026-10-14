@@ -49,12 +49,35 @@ li {
   font-size: 9.5pt;
 }
 @media print {
-  .ats .role + .earlier {
+  .ats .role + .role {
     break-before: page;
   }
 }
 
 .ats {
   font-size: 10.5pt;
+  line-height: 1.32;
+}
+
+/* Apply the same typography to both airSlate roles and earlier experience. */
+.ats main h3 {
+  font-size: 10.5pt;
+  line-height: 1.32;
+}
+.ats .employer h3 {
+  font-size: 11pt;
+}
+.ats .earlier > p:not(.meta),
+.ats .role li,
+.ats .additional p {
+  font-size: inherit;
+  line-height: inherit;
+}
+.ats .earlier > p:not(.meta) {
+  margin-top: 5px;
+}
+.ats .meta,
+.ats .promotion {
+  font-size: 9.5pt;
   line-height: 1.32;
 }

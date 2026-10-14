@@ -166,6 +166,9 @@ li {
 .earlier .meta {
   margin-bottom: 3px;
 }
+.education p + p {
+  margin-top: 5px;
+}
 @page {
   size: A4;
   margin: 11mm 12mm;
@@ -256,6 +259,9 @@ li {
 }
 .designed .header {
   padding-bottom: 10px;
+}
+.designed main {
+  line-height: 1.28;
 }
 .designed aside {
   font-size: 9pt;

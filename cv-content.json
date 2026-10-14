@@ -10,13 +10,15 @@
     ["Automation", "Playwright, TypeScript/JavaScript, UI & API automation"],
     [
       "API & Backend",
-      "REST API, API contracts, authentication, microservices, integrations, Postman, Swagger/OpenAPI"
+      "REST API, API contracts, authentication, microservices, RabbitMQ, asynchronous workflows, integrations, Postman, Swagger/OpenAPI"
     ],
     [
       "Framework Design",
       "Page Objects, custom fixtures, reusable utilities, test data setup and cleanup"
     ],
+    ["SQL", "Data validation, basic queries and joins"],
     ["CI/CD", "GitHub Actions, TeamCity, Git"],
+    ["AI-assisted QA", "Claude Code, Codex — test design, automation, code review and debugging"],
     [
       "Manual Testing",
       "Exploratory, regression, integration testing; requirements & risk analysis; test design"
@@ -33,11 +35,11 @@
       "dates": "2023–2025",
       "note": "Promoted from Manual QA Engineer after a technical review",
       "bullets": [
-        "Developed and maintained UI and API automated tests using Playwright and TypeScript, covering 50+ backend endpoints and creating 150+ end-to-end tests across API and UI layers.",
+        "Developed and maintained UI and API tests with Playwright and TypeScript, covering 50+ backend endpoints and creating 150+ end-to-end tests.",
         "Contributed to maintaining a shared automation suite of 500+ tests.",
-        "Built reusable automation infrastructure with helpers, fixtures and test data flows; configured GitHub Actions for scheduled and on-demand execution.",
+        "Built reusable helpers, fixtures and test data flows; configured GitHub Actions for scheduled and on-demand test execution.",
         "Defined automation coverage based on release risks, business priorities and regression value.",
-        "Validated backend microservices and integrations with Salesforce, NetSuite, Google and Microsoft, including API contracts, authentication and error handling."
+        "Validated microservice APIs and integrations with Salesforce, NetSuite, Google and Microsoft, including contracts, authentication and error handling."
       ]
     },
     {
@@ -58,7 +60,7 @@
       "title": "Freelance Software Tester",
       "dates": "2020–2021",
       "company": "test IO & uTest · Global, Remote",
-      "text": "Performed exploratory, regression and cross-platform testing of web and mobile applications; executed test scenarios and investigated issues using ADB, Postman, SOAP UI and debugging tools."
+      "text": "Performed exploratory, regression and cross-platform testing of web and mobile applications using ADB, Postman, SOAP UI and debugging tools."
     },
     {
       "title": "QA Intern",
