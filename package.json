@@ -1,5 +1,7 @@
 {
   "scripts": {
+    "build:cv": "node scripts/build-cv.cjs",
+    "export:pdf": "npm run build:cv && node scripts/export-pdf.cjs",
     "dev": "ts-node-dev --respawn --transpile-only server.ts",
     "build": "tsc",
     "start": "node dist/server.js"
