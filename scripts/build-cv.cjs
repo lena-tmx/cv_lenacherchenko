@@ -26,10 +26,11 @@ const experience = section(
   <div class="additional"><h3>Additional Experience</h3>${paragraph(cv.additionalExperience)}</div>
 `,
 );
-const portfolio = section(
-  'Technical Portfolio',
-  `<h3><a href="${escape(cv.portfolio.url)}">${escape(cv.portfolio.title)}</a></h3>${paragraph(cv.portfolio.description)}<p class="stack">${escape(cv.portfolio.stack)}</p>`,
-);
+const portfolio = (showUrl = false) =>
+  section(
+    'Technical Portfolio',
+    `<h3><a href="${escape(cv.portfolio.url)}">${escape(cv.portfolio.title)}</a></h3>${showUrl ? `<p class="portfolio-url"><a href="${escape(cv.portfolio.url)}">${escape(cv.portfolio.url)}</a></p>` : ''}${paragraph(cv.portfolio.description)}<p class="stack">${escape(cv.portfolio.stack)}</p>`,
+  );
 const certification = section('Certifications', paragraph(cv.certification));
 const education = section(
   'Education & Training',
@@ -47,7 +48,7 @@ for (const variant of ['designed', 'ats']) {
 <div class="page">
 <header class="header">${ats ? '' : '<img class="profile-photo" src="photo-optimized.jpg" alt="Lena Cherchenko" width="84" height="84">'}<div class="identity"><h1>${escape(cv.name)}</h1><p class="headline">${escape(cv.headline)}</p><p class="location">${escape(cv.location)}</p><div class="contact"><a href="mailto:${escape(cv.email)}">${escape(cv.email)}</a><a href="tel:+41765886645">${escape(cv.phone)}</a><a href="${escape(cv.linkedin)}">linkedin.com/in/lena-ch</a></div></div></header>
 ${summary}
-${ats ? `<main>${skills}${experience}${portfolio}${credentials}</main>` : `<div class="layout"><aside>${skills}${portfolio}${certification}${languages}</aside><main>${experience}${education}</main></div>`}
+${ats ? `<main>${skills}${experience}${portfolio(true)}${credentials}</main>` : `<div class="layout"><aside>${skills}${portfolio()}${certification}${languages}</aside><main>${experience}${education}</main></div>`}
 </div></body></html>`;
   fs.writeFileSync(path.join(root, 'public', ats ? 'ats.html' : 'index.html'), html);
 }

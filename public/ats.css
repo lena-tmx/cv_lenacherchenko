@@ -48,6 +48,10 @@ li {
 .contact {
   font-size: 9.5pt;
 }
+.portfolio-url {
+  margin: 4px 0 6px;
+  overflow-wrap: anywhere;
+}
 .ats {
   font-size: 10.5pt;
   line-height: 1.32;
