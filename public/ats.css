@@ -48,12 +48,6 @@ li {
 .contact {
   font-size: 9.5pt;
 }
-@media print {
-  .ats .role + .role {
-    break-before: page;
-  }
-}
-
 .ats {
   font-size: 10.5pt;
   line-height: 1.32;
